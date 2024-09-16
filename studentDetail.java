@@ -51,7 +51,7 @@ class student{
 	}
 	void Sum() {
 		float sum=tamil+english+maths+science+social_science;
-		System.out.println("sum is:"+sum);
+		System.out.println("total mark is:"+sum);
 	}
 }
 public class studentDetail {
