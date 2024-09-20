@@ -1,0 +1,26 @@
+package myfirstjavafile;
+import java.util.Scanner;
+public class userJava {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 while(true) {
+				
+		        Scanner user=new Scanner(System.in);
+				System.out.println("new User name:");
+				String name=user.nextLine();
+				System.out.println("address:");
+				String addr=user.nextLine();
+				System.out.println("age:");
+				int age=user.nextInt();
+				System.out.println("pin code:");
+				int pin=user.nextInt();
+				
+				System.out.println("user name:"+name);
+				System.out.println("address"+addr);
+				System.out.println("age"+age);
+				System.out.println("pin code"+pin);
+	}
+
+}
+}
