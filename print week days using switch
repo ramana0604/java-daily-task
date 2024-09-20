@@ -1,0 +1,35 @@
+package myfirstjavafile;
+import java.util.Scanner;
+public class weekDays {
+
+	public static void main(String[] args) {
+		Scanner weekd=new Scanner(System.in);
+		System.out.println("enter day with number");
+		String week=weekd.nextLine();
+		switch(week) {
+		case "day1":
+			System.out.println("monday");
+			break;
+		case "day2":
+			System.out.println("tuesday");
+			break;	
+		case "day3":
+			System.out.println("wednesday");
+			break;
+		case "day4":
+			System.out.println("thurSsday");
+			break;
+		case "day5":
+			System.out.println("friday");
+			break;
+		case "day6":
+			System.out.println("saturday");
+			break;
+		case "day7":
+			System.out.println("sunday");
+			break;
+		}
+      
+	}
+
+}
