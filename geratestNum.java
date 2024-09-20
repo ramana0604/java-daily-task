@@ -1,0 +1,33 @@
+package myfirstjavafile;
+
+import java.util.Scanner;
+
+public class geratestNum {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner gnum=new Scanner(System.in);
+		System.out.println("enter the nymber1:");
+		int a=gnum.nextInt();
+		
+		System.out.println("enter the nymber2:");
+		int b=gnum.nextInt();
+		
+		
+		System.out.println("enter the nymber:");
+		int c=gnum.nextInt();
+		
+		if(a>b&&b>c) {
+			System.out.println(a+ " is greater than "+b + c);
+		}
+		else if(b>a&&b>c) {
+			System.out.println(b+" is greater than "+b + c);
+		}
+		else {
+			System.out.println(c+" is greater than "+a + b);
+		}
+		
+
+	}
+
+}
