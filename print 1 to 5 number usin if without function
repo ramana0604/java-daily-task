@@ -1,0 +1,25 @@
+package myfirstjavafile;
+
+public class printingNum {
+
+	public static void main(String[] args) {
+		
+		int num=1;
+
+		if(num<5) {
+			System.out.println(num);
+			num++;
+			System.out.println(num);
+			num++;
+			System.out.println(num);
+			num++;
+			System.out.println(num);
+			num++;
+			System.out.println(num);
+			num++;
+		}
+		
+
+	}
+
+}
