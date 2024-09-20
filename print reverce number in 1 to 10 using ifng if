@@ -1,0 +1,33 @@
+package myfirstjavafile;
+
+public class revNum {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int rev=10;
+		if(rev>1) {
+			System.out.println(rev);
+			rev--;
+			System.out.println(rev);
+			rev--;
+			System.out.println(rev);
+			rev--;
+			System.out.println(rev);
+			rev--;
+			System.out.println(rev);
+			rev--;
+			System.out.println(rev);
+			rev--;
+			System.out.println(rev);
+			rev--;
+			System.out.println(rev);
+			rev--;
+			System.out.println(rev);
+			rev--;
+			System.out.println(rev);
+			rev--;
+		}
+
+	}
+
+}
