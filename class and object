@@ -1,0 +1,19 @@
+package myfirstjavafile;
+
+public class obj {
+//	ststic return type function 
+	static void myStaticmet(){
+		System.out.println("static method");
+		
+		
+	}
+public static void myPublicMet() {
+	System.out.println("public method");
+}
+public static void main(String[] args) {
+	myStaticmet();
+	obj myobj=new obj();
+	obj.myPublicMet();
+
+}
+}
