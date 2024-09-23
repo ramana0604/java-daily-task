@@ -1,0 +1,19 @@
+package pack2;
+
+public class metod {
+	int a=10;//diclare the instant variables
+	int b=45;
+//	int c=a+b;
+	void display() {//creting method foradd two number
+		int c=a+b;
+		System.out.println("addition value is:"+c);
+	}
+
+	public static void main(String[] args) {
+		
+		metod add=new metod();//crete a object for accsess the method
+		add.display();
+
+	}
+
+}
