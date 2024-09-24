@@ -1,0 +1,39 @@
+package pack2;
+
+public class book {
+	String book_title;
+	String book_author;
+	int book_price;
+
+	public book() {
+		 book_title="null";
+		 book_author="null";
+		 book_price=0;
+	}
+	public book(String name,String author,int price) {
+		book_title=name;
+		 book_author=author;
+		 book_price=price;
+	}
+	public book(String name,String author) {
+		book_title=name;
+		 
+		 book_author=author;
+	}
+	public void display() {
+		System.out.println("--------------------------------");
+		System.out.println("name of the book is:"+book_title);
+		System.out.println("author of the book is:"+book_author);
+		System.out.println("price of the book is:"+book_price);
+		System.out.println("---------------------------------");
+	}
+
+	public static void main(String[] args) {
+		book book1=new book("vel paari","su.vengadesan");
+		book book2=new book("ponnniyin selval","kalki",900);
+		book1.display();
+		book2.display();
+
+	}
+
+}
