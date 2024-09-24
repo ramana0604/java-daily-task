@@ -1,0 +1,27 @@
+package pack2;
+
+public class Dog {
+	String dog_name;
+	String dog_colour;
+
+	public Dog(String name,String colour) {
+		dog_name=name;
+		dog_colour=colour;
+	}
+	public void print() {
+		System.out.println("--------------");
+		System.out.println("dog's name is :"+dog_name);
+		System.out.println("dog's colour is :"+dog_colour);
+		System.out.println("--------------");
+	}
+
+	public static void main(String[] args) {
+		Dog dog1=new Dog("max","gold");
+		Dog dog2=new Dog("subramani","black");
+		Dog dog3=new Dog("puppy","white");
+		dog1.print();
+		dog2.print();
+		dog3.print();
+	}
+
+}
