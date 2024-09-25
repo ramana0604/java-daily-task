@@ -1,0 +1,71 @@
+package pack2;
+
+public class salary {
+	private String name;
+    private String jobTitle;
+    private double salary;
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getJobTitle() {
+		return jobTitle;
+	}
+
+	public void setJobTitle(String jobTitle) {
+		this.jobTitle = jobTitle;
+	}
+
+	public double getSalary() {
+		return salary;
+	}
+
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
+
+
+	public salary(String name, String jobTitle, double salary) {
+        this.name = name;
+        this.jobTitle = jobTitle;
+        this.salary = salary;
+    }
+	public double calculateAnnualSalary() {
+        return salary * 12;
+    }
+
+	public double calculateSalaryIncrease(double percentage) {
+        return salary * (percentage / 100);
+    }
+	 public void updateSalary(double increase) {
+	        salary += increase;
+	    }
+	
+	       
+	       
+	
+
+	public static void main(String[] args) {
+		salary employee = new salary ("John Doe", "Software Engineer", 5000.0);
+		System.out.println("Employee Name: " + employee.getName());
+        System.out.println("Job Title: " + employee.getJobTitle());
+        System.out.println("Monthly Salary: $" + employee.getSalary());
+        System.out.println("Annual Salary: $" + employee.calculateAnnualSalary());
+
+        // Calculate and apply 10% salary increase
+        double increase = employee.calculateSalaryIncrease(10);
+        employee.updateSalary(increase);
+
+        // Print updated employee details
+        System.out.println("Updated Monthly Salary: $" + employee.getSalary());
+        System.out.println("Updated Annual Salary: $" + employee.calculateAnnualSalary());
+
+
+
+	}
+
+}
