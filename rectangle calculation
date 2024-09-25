@@ -1,0 +1,38 @@
+package pack2;
+
+public class Rectangle {
+	 private int width;
+	private int height;
+
+	public Rectangle(int width,int height) {
+		this.width=width;
+		this.height=height;
+	}
+	public int getwidth() {
+        return width;
+    }
+	public  int getheight() {
+        return height;
+    }
+	public  int calculateArea() {
+        return width * height;
+    }
+	public  int calculatePerimeter() {
+        return 2 * (width + height);
+    }
+	void display() {
+		System.out.println("Rectangle Width: " + getwidth());
+        System.out.println("Rectangle Height: " + getheight());
+        System.out.println("Rectangle Area: " + calculateArea());
+        System.out.println("Rectangle Perimeter: " + calculatePerimeter());
+		
+	}
+	
+	public static void main(String[] args) {
+		Rectangle rect=new Rectangle(10,20);
+		rect.display();
+		
+
+	}
+
+}
