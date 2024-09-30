@@ -1,0 +1,54 @@
+package pack2;
+abstract class Vehicle{
+	abstract void startEngine();
+	abstract void stopEngine();
+	
+}
+class car extends Vehicle {
+
+	@Override
+	void startEngine() {
+		System.out.println("car engine is strarted!");
+		
+	}
+
+	@Override
+	void  stopEngine() {
+		
+		System.out.println("car engine is stopped!");
+	}
+}
+	class motorcycle extends Vehicle{
+
+		@Override
+		void startEngine() {
+			System.out.println("bike engine is strarted!");
+			
+			
+		}
+		
+
+		@Override
+		void stopEngine() {
+			System.out.println("bike engine is stopped!");
+			
+		}
+		
+	}
+	
+
+
+
+public class EngineInJava {
+
+	public static void main(String[] args) {
+		car car1=new car();
+		car1.startEngine();
+		car1.stopEngine();
+		motorcycle bike= new motorcycle();
+		bike.startEngine();
+		bike.stopEngine();
+
+	}
+
+}
