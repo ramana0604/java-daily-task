@@ -1,0 +1,51 @@
+package logic;
+abstract class Person{
+	abstract void eat();
+	abstract void exercise();
+	
+}
+class Athlete extends Person{
+
+	@Override
+	void eat() {
+		System.out.println("athlete eat foods full of calcium,iron,potassium,fiber ");
+		
+	}
+
+	@Override
+	void exercise() {
+		System.out.println("athlete was stretch the body in every day ");
+		
+	}
+}
+	class lazy  extends Person{
+
+		@Override
+		void eat() {
+			System.out.println("lazy person  was eating fast food ");
+			
+		}
+
+		@Override
+		void exercise() {
+			System.out.println("lazy was can't stretch the body");
+			
+		}
+		
+	
+	
+}
+
+public class humanDetail {
+
+	public static void main(String[] args) {
+		Athlete a=new Athlete();
+		a.exercise();
+		a.eat();
+		lazy l=new lazy();
+		l.eat();
+		l.exercise();
+
+	}
+
+}
