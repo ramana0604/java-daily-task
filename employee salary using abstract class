@@ -1,0 +1,71 @@
+package pack2;
+abstract class Employee{
+	double basesalary;
+	int id;
+	String name;
+	int age;
+	
+	abstract double calculatesalary();
+	abstract void displayinfo();
+	public Employee (double basesalary,int id,String name,int age) {
+		this.basesalary=basesalary;
+		this.id=id;
+		this.name=name;
+		this.age=age;
+		
+	}
+		
+	
+}
+class manager extends Employee{
+double bonus;
+double sal;
+double annul;
+
+	public manager(double basesalary, int id, String name, int age ) {
+		super(basesalary, id, name, age);
+		this.bonus=bonus;
+		
+		
+	}
+	double bonus1() {
+		return bonus=basesalary*0.10;
+	}
+
+	@Override
+	double calculatesalary() {
+		
+		return basesalary;
+	}
+	double annual_salary() {
+		return annul=basesalary*12;
+	}
+
+	@Override
+	void displayinfo() {
+		System.out.println("----------------");
+		System.out.println("employee id is:"+id);
+		System.out.println("employee name is:"+name);
+		System.out.println("age of the employee is:"+age);
+		
+		System.out.println("salary of employee is :"+calculatesalary() );
+		System.out.println("bonus of the employee is:"+bonus1());
+		System.out.println("annul salary is :"+annual_salary());
+		System.out.println("------------------");
+		
+	}
+}
+
+
+		
+public class EmpDetail {
+
+	public static void main(String[] args) {
+		manager m=new manager(25000,101,"ramana",20);
+		m.displayinfo();
+	
+		
+
+	}
+
+}
