@@ -1,0 +1,27 @@
+
+package logic;
+
+public class CheckTheNumIsodd {
+
+	public static void main(String[] args) {
+		int[] arr={12,43,65,76,87,13};
+		
+		
+		for(int i=0;i<arr.length;i++) {
+			 if (arr[i] % 2 == 0) {
+				 
+				 System.out.println("even number is:"+arr[i]);
+				 }
+			 
+			 else if(arr[i]%2==1){
+				 System.out.println("this is odd number:"+arr[i]);
+			 }
+				
+		
+		
+			
+		}
+
+	}
+
+}
