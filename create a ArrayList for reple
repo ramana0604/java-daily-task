@@ -1,0 +1,32 @@
+package newpack;
+import java.util.ArrayList;
+public class ArrayList_1 {
+
+	public static void main(String[] args) {
+		
+
+	
+		        // Create an ArrayList
+		        ArrayList<String> list = new ArrayList<>();
+
+		        // Add elements to the list
+		        list.add("apple");
+		        list.add("Banana");
+		        list.add("kiwi");
+		        list.add("Date");
+		        list.add("pineapple");
+
+		        System.out.println("Original List: " + list);
+
+		        if (list.size() >=3) {
+		            // Remove the third element
+		            list.remove(2);
+		        } else {
+		            System.out.println("List has less than three elements.");
+		        }
+
+		        System.out.println("List after removing third element: " + list);
+		    }
+		}
+
+
