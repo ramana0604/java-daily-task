@@ -1,0 +1,28 @@
+package newpack;
+import java.util.ArrayList;
+
+public class ArrayLIst_3 {
+
+	public static void main(String[] args) {
+		
+
+		        // Create an ArrayList and add some elements
+		        ArrayList<String> list = new ArrayList<>();
+		        list.add("Apple");
+		        list.add("Banana");
+		        list.add("Cherry");
+
+		        // Print the original ArrayList
+		        System.out.println("Original ArrayList: " + list);
+
+		       
+		        String newElement = "pineapple";
+
+		     
+		        list.set(1, newElement);
+
+		        // Print the updated ArrayList
+		        System.out.println("Updated ArrayList: " + list);
+		    }
+		
+}
