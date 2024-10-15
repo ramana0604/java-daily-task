@@ -1,0 +1,29 @@
+package newpack;
+import java.util.ArrayList;
+public class ArrayList_2 {
+
+	public static void main(String[] args) {
+		
+
+		
+		  
+		        // Create an ArrayList
+		        ArrayList<String> list = new ArrayList<>();
+
+		        // Add elements to the list
+		        list.add("Apple");
+		        list.add("Banana");
+		        list.add("kiwi");
+		        list.add("Date");
+		        list.add("pineApple");
+
+		        System.out.println("ArrayList Elements:");
+		        
+		        // Print elements using their position
+		        for (int i = 0; i < list.size(); i++) {
+		            System.out.println("Element  position " + i + ": " + list.get(i));
+		        }
+		    }
+		}
+
+
