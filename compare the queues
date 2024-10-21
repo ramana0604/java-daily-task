@@ -1,0 +1,28 @@
+package newpavck;
+import java.util.*;
+public class Compare {
+
+	public static void main(String[] args) {
+		Queue <Integer>queue1=new LinkedList<>();//creating queue1
+		
+		Queue <Integer>queue2=new LinkedList<>();//creating queue2
+		//add values for queue1
+		queue1.add(2);
+		queue1.add(3);
+		queue1.add(4);
+		queue1.add(5);
+		//add values for queue2
+		queue2.add(2);
+		queue2.add(32);
+		queue2.add(4);
+		queue2.add(5);
+		//check the queue is equal or not
+		if(queue1.equals(queue2)) {
+			System.out.println("equal");
+		}
+		else {
+			System.out.println("not equal");
+		}
+	}
+
+}
