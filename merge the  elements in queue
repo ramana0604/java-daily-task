@@ -1,0 +1,27 @@
+package newpavck;
+import java.util.*;
+public class MergeQueue {
+
+	public static void main(String[] args) {
+		Queue<Integer>que=new LinkedList<>();
+		que.add(2);
+		que.add(3);
+		que.add(5);
+		que.add(65);
+		que.add(1);
+		Queue<Integer>que1=new LinkedList<>();
+		que1.add(1);
+		que1.add(31);
+		que1.add(54);
+		que1.add(6);
+		que1.add(10);
+		System.out.println("original queue is "+que);
+		System.out.println("original queue2 is "+que1);
+		que.addAll(que1);
+		System.out.println("merged queue is "+que);
+		
+		
+
+	}
+
+}
