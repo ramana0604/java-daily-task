@@ -1,0 +1,19 @@
+package newpavck;
+import java.util.*;
+public class MaxEleInQueue {
+
+	public static void main(String[] args) {
+		//create the queue 
+		Queue<Integer>queue=new LinkedList<>();
+		queue.add(2);
+		queue.add(23);
+		queue.add(100);
+		queue.add(5);
+		queue.add(9);
+		//to find maximum element in queue
+		int max=Collections.max(queue);
+		System.out.println("greatest elemnt on queue is "+max);
+
+	}
+
+}
